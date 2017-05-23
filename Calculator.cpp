@@ -22,11 +22,21 @@ int Sub ()
 	cout << result << endl;
 }
 
+int Mul ()
+{
+	int a, b;
+	int result;
+	cout << "¬ведите 2 числа: ";
+	cin >> a >> b;
+	result = a * b;
+	cout << result << endl;
+}
 int main ()
 {
 	setlocale (0, "");
 	Sum ();
 	Sub ();
+	Mul ();
 	system ("pause");
 	return 0;
 }
