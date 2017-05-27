@@ -36,12 +36,21 @@ void Sub ()
 
 void Mul ()
 {
-	int a, b;
-	int result;
-	cout << "¬ведите 2 числа: ";
-	cin >> a >> b;
-	result = a * b;
-	cout << result << endl;
+	int number;
+	cout << "¬ведите количество множителей: ";
+	cin >> number;
+	double * s = new double[number];
+	double answer = 1;
+	for (int i = 0; i < number; i++)
+	{
+		cout << "¬ведите " << i + 1 << " множитель: ";
+		cin >> s[i];
+		answer *= s[i];
+	}
+	for (int i = 0; i < number - 1; i++)
+		cout << setprecision(8) << s[i] << " * ";
+	cout << setprecision(8) << s[number - 1] << " = " << setprecision(8) << answer << endl;
+	delete[]s;
 }
 
 void Div ()
