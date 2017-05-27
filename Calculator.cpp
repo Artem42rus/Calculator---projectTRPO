@@ -1,5 +1,8 @@
 #include <iostream>
 #include <clocale>
+#include <cmath>
+#include <windows.h>
+#include <iomanip>
 using namespace std;
 
 int Sum ()
@@ -41,9 +44,19 @@ float Div ()
 	result = a / b;
 	cout << result << endl;	
 }
+
+void Sqrt()
+{
+	double a;
+	cout << "Введите число, из которого надо извлечь квадратный корень: ";
+	cin >> a;
+	cout << "sqrt(" << a << ") = " << sqrt(a) << endl;
+}
+
 int main ()
 {
 	setlocale (0, "");
+	Sqrt();
 	Sum ();
 	Sub ();
 	Mul ();
