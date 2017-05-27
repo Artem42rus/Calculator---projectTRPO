@@ -8,13 +8,13 @@ using namespace std;
 void Sum ()
 {
 	int number;
-	cout << "¬ведите количество слагаемых: ";
+	cout << "¬ведите количество чисел: ";
 	cin >> number;
 	double * s = new double[number];
 	double answer = 0;
 	for (int i = 0; i < number; i++)
 	{
-		cout << "¬ведите " << i + 1 << " слагаемое: ";
+		cout << "¬ведите " << i + 1 << " число: ";
 		cin >> s[i];
 		answer += s[i];
 	}
@@ -26,12 +26,12 @@ void Sum ()
 
 void Sub ()
 {
-	int a, b;
-	int result;
-	cout << "¬ведите 2 числа: ";
-	cin >> a >> b;
-	result = a - b;
-	cout << result << endl;
+	double a, b;
+	cout << "¬ведите первое число: ";
+	cin >> a;
+	cout << "¬ведите второе число: ";
+	cin >> b;
+	cout << a << " - " << b << " = " << setprecision(8) << a - b << endl;
 }
 
 void Mul ()
