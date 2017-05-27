@@ -53,6 +53,26 @@ void Sqrt()
 	cout << "sqrt(" << a << ") = " << sqrt(a) << endl;
 }
 
+void Radical()
+{
+	double a, b;
+	cout << "Введите число, из которого надо извлечь корень: ";
+	cin >> a;
+	cout << "Корень какой степени надо извлечь? ";
+	cin >> b;
+	cout << "Корень " << b << " степени из числа " << a << " равен " << pow(a, 1 / b) << endl;
+}
+
+void Power()
+{
+	double a, b;
+	cout << "Введите основание степпени: ";
+	cin >> a;
+	cout << "Введите показатель степпени: ";
+	cin >> b;
+	cout << a << "^" << b << " = " << pow(a, b) << endl;
+}
+
 int main ()
 {
 	setlocale (0, "");
