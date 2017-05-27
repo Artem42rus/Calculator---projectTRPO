@@ -55,12 +55,12 @@ void Mul ()
 
 void Div ()
 {
-	float a, b;
-	float result;
-	cout << "¬ведите 2 числа: ";
-	cin >> a >> b;
-	result = a / b;
-	cout << result << endl;	
+	double a, b;
+	cout << "¬ведите первое число: ";
+	cin >> a;
+	cout << "¬ведите второе число: ";
+	cin >> b;
+	cout << a << " / " << b << " = " << setprecision(8) << a / b << endl;
 }
 
 void Sqrt()
