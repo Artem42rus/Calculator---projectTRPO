@@ -5,7 +5,7 @@
 #include <iomanip>
 using namespace std;
 
-int Sum ()
+void Sum ()
 {
 	int a, b;
 	int result;
@@ -15,7 +15,7 @@ int Sum ()
 	cout << result << endl;
 }
 
-int Sub ()
+void Sub ()
 {
 	int a, b;
 	int result;
@@ -25,7 +25,7 @@ int Sub ()
 	cout << result << endl;
 }
 
-int Mul ()
+void Mul ()
 {
 	int a, b;
 	int result;
@@ -35,7 +35,7 @@ int Mul ()
 	cout << result << endl;
 }
 
-float Div ()
+void Div ()
 {
 	float a, b;
 	float result;
