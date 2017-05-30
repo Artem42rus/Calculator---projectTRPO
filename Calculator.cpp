@@ -5,13 +5,13 @@
 #include <iomanip>
 using namespace std;
 
+void Menu ();
+
 void Sum ();
 
 void Sub ();
 
-
 void Mul ();
-
 
 void Div ();
 
@@ -24,13 +24,28 @@ void Power();
 int main ()
 {
 	setlocale (0, "");
-	Sqrt();
-	Sum ();
-	Sub ();
-	Mul ();
-	Div ();
+	Menu ();
 	system ("pause");
 	return 0;
+}
+
+void Menu ()
+{
+	int menu;
+	cout << "1. Сложение   2. Вычисление  3. Умножение  4. Деление" << endl;
+	cout << "5. Извлечение квадратного корня  6. Корень любой степени  7. Возведение в степень " << endl;
+	cout << "Введите число : ";
+		cin >> menu;
+	switch (menu)
+	{
+		case 1: Sum (); break;
+		case 2: Sub (); break;
+		case 3: Mul (); break;
+		case 4: Div (); break;
+		case 5: Sqrt (); break;
+		case 6: Radical (); break;
+		case 7: Power (); break;
+	}
 }
 
 void Sum ()
