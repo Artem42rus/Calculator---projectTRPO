@@ -5,6 +5,34 @@
 #include <iomanip>
 using namespace std;
 
+void Sum ();
+
+void Sub ();
+
+
+void Mul ();
+
+
+void Div ();
+
+void Sqrt();
+
+void Radical();
+
+void Power();
+
+int main ()
+{
+	setlocale (0, "");
+	Sqrt();
+	Sum ();
+	Sub ();
+	Mul ();
+	Div ();
+	system ("pause");
+	return 0;
+}
+
 void Sum ()
 {
 	int number;
@@ -89,16 +117,4 @@ void Power()
 	cout << "¬ведите показатель степпени: ";
 	cin >> b;
 	cout << a << "^" << b << " = " << pow(a, b) << endl;
-}
-
-int main ()
-{
-	setlocale (0, "");
-	Sqrt();
-	Sum ();
-	Sub ();
-	Mul ();
-	Div ();
-	system ("pause");
-	return 0;
 }
