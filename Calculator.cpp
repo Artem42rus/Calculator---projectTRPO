@@ -8,7 +8,6 @@ bool done = 0;
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
 
 	while (!done)
 

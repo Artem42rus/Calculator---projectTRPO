@@ -4,8 +4,8 @@
 #include <math.h>
 #include <iomanip>
 #include "Function_declaration.h"
-bool ShowMenu();    
 
+bool ShowMenu();    
 void Error();       
 void Sum();         
 void Sub();         

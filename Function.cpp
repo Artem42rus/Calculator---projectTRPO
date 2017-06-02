@@ -2,13 +2,15 @@
 #include <math.h>
 #include <iomanip>
 #include "Function_declaration.h"
+
 using namespace std;
+
 bool ShowMenu()
 {
 	short menu;
 
-	cout << "1. Сложение   2. Вычисление  3. Умножение  4. Деление" << endl;
-	cout << "5. Извлечение квадратного корня  6. Корень любой степени  7. Возведение в степень " << endl;
+	cout << "1. Addition   2. Computation  3. Multiplication  4. Division" << endl;
+	cout << "5. Square root extraction  6. Root of any degree  7. Exponentiation " << endl;
 	
 	cin >> menu;
 	if (menu == 1)
@@ -34,19 +36,19 @@ bool ShowMenu()
 }
 void Error()
 {
-	cout << "Неправильный ввод, попробуйте еще" << endl;
+	cout << "Invalid input, try again" << endl;
 }
 
 void Sum()
 {
 	int number;
-	cout << "Введите количество чисел: ";
+	cout << "Enter the number of numbers: ";
 	cin >> number;
 	double * s = new double[number];
 	double answer = 0;
 	for (int i = 0; i < number; i++)
 	{
-		cout << "Введите " << i + 1 << " число: ";
+		cout << "Enter " << i + 1 << " the number: ";
 		cin >> s[i];
 		answer += s[i];
 	}
@@ -59,9 +61,9 @@ void Sum()
 void Sub()
 {
 	double a, b;
-	cout << "Введите первое число: ";
+	cout << "Enter the first number: ";
 	cin >> a;
-	cout << "Введите второе число: ";
+	cout << "Enter the second number: ";
 	cin >> b;
 	cout << a << " - " << b << " = " << setprecision(8) << a - b << endl;
 }
@@ -69,13 +71,13 @@ void Sub()
 void Mul()
 {
 	int number;
-	cout << "Введите количество множителей: ";
+	cout << "Enter the number of numbers: ";
 	cin >> number;
 	double * s = new double[number];
 	double answer = 1;
 	for (int i = 0; i < number; i++)
 	{
-		cout << "Введите " << i + 1 << " множитель: ";
+		cout << "Enter " << i + 1 << " the number: ";
 		cin >> s[i];
 		answer *= s[i];
 	}
@@ -88,9 +90,9 @@ void Mul()
 void Div()
 {
 	double a, b;
-	cout << "Введите первое число: ";
+	cout << "Enter the first number: ";
 	cin >> a;
-	cout << "Введите второе число: ";
+	cout << "Enter the second numbe: ";
 	cin >> b;
 	cout << a << " / " << b << " = " << setprecision(8) << a / b << endl;
 }
@@ -98,7 +100,7 @@ void Div()
 void Sqrt()
 {
 	double a;
-	cout << "Введите число, из которого надо извлечь квадратный корень: ";
+	cout << "Enter the number: ";
 	cin >> a;
 	cout << "sqrt(" << a << ") = " << sqrt(a) << endl;
 }
@@ -106,19 +108,19 @@ void Sqrt()
 void Radical()
 {
 	double a, b;
-	cout << "Введите число, из которого надо извлечь корень: ";
+	cout << "Enter the number: ";
 	cin >> a;
-	cout << "Корень какой степени надо извлечь? ";
+	cout << "The root of which degree one must extract? ";
 	cin >> b;
-	cout << "Корень " << b << " степени из числа " << a << " равен " << pow(a, 1 / b) << endl;
+	cout << "Root " << b << " of degree " << a << " is equal to " << pow(a, 1 / b) << endl;
 }
 
 void Power()
 {
 	double a, b;
-	cout << "Введите основание степпени: ";
+	cout << "Enter the number ";
 	cin >> a;
-	cout << "Введите показатель степпени: ";
+	cout << "Enter the degree: ";
 	cin >> b;
 	cout << a << "^" << b << " = " << pow(a, b) << endl;
 }
