@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <iomanip>
-#include "Function.h"
+#include "Function_declaration.h"
 using namespace std;
 
 bool done = 0;
