@@ -1,15 +1,18 @@
-All: Calculator_C++
+CC = g++
 
-Calculator_C++: Calculator.o Function.o
-	g++ Calculator.o Function.o -o Calculator_C++
+CFLAGS = -c -Wall
+
+all: Calculator
+
+Calculator: Calculator.o Function.o
+	$(CC) Calculator.o Function.o -o Calculator
 
 Calculator.o: Calculator.cpp
-	g++ -c Calculator.cpp
+	$(CC) $(CFLAGS) Calculator.cpp
 
 Function.o: Function.cpp
-	g++ -c Function.cpp
+	$(CC) $(CFLAGS) Function.cpp
 
 clean:
-	rm -rf *.o Calculator_C++
-
+	rm -rf *.o Calculator
 
