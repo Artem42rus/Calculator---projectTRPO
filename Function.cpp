@@ -16,7 +16,7 @@ bool ShowMenu()
 	if (menu == 1)
 		Sum();
 	else if (menu == 2)
-		Sub;
+		Sub();
 	else if (menu == 3)
 		Mul();
 	else if (menu == 4)
